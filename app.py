@@ -19,15 +19,16 @@ chat = model.start_chat(history=[])
 # Function to generate a strongly genre-specific story
 def get_story_response(topic, story_type):
     prompt = (
-        f"Write a complete {story_type.lower()} story about {topic}. "
-        f"Use clear and straightforward language that a normal person can easily follow and avoid complex terms by using basic vocabulary."
-        f"Make the story deeply representative of the {story_type} genre, with the proper tone, elements, and style."
-        f"For example, if it's horror, make it suspenseful and frightening; if it's romantic, make it heartfelt and emotional."
-        f"Make sure the story is suitable for all audiences, avoiding graphic or sensitive content."
-        f"Ensure the response is respectful, gentle, without any physical intimacy or inappropriate content."
-        f"Ensure the story is unique, simple languaged, easy to be understood, crisp, and fully aligned with the chosen genre."
-        f"Also focus on making the story fun and clear for the reader and have a meaningful end related to the chosen genre."
+        f"Write a {story_type.lower()} story about {topic}. "
+        f"Use simple language with short sentences and basic words so everyone can understand it. "
+        f"Don't use complicated words or ideas. Make sure it feels like a person wrote it, not a machine. "
+        f"The story should match the style of the {story_type} genre. For example, horror should be suspenseful, and romance should be emotional. "
+        f"Use dialogues whenever necessary to show the conversation."
+        f"Keep the story suitable for all ages, and avoid sensitive or graphic content. "
+        f"Make it fun, clear, and end with a meaningful message that fits the genre."
     )
+
+
     
     # Send the message and get the response chunks
       
@@ -71,7 +72,7 @@ def text_to_speech(text):
     return temp_file_path
 
 # Initialize Streamlit app
-st.set_page_config(page_title="StoryAI - Dream Story Generator", page_icon="📚", layout="centered")
+st.set_page_config(page_title="StoryAI - Dream Story Generator", page_icon="📚", layout="wide")
 
 # Custom CSS for responsiveness across both light and dark modes
 st.markdown("""
@@ -83,7 +84,7 @@ st.markdown("""
     }
     .title-container {
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     .story-box {
         padding: 15px;
@@ -100,11 +101,12 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
+
 st.markdown("""
     <style>
     .title-container {
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     .gradient-title {
         font-size: 48px;
@@ -133,11 +135,24 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-
 # Header with adaptive text color and a consistent look across modes
+st.markdown("""
+    <style>
+    .gradient-title {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #5A82E1, #F18DA5);
+    -webkit-background-clip: text;
+    color: transparent;
+    max-width: 600px;  /* This limits the width of the gradient */
+    margin: 0 auto;  /* Center it within its container */
+}
+
+    </style>
+""", unsafe_allow_html=True)
+
 st.markdown(
-    "<div class='title-container'><h1 style='color: var(--primary-color);'>Dream. Create. Generate.</h1></div>",
+    "<div class='title-container'><h1 class='gradient-title'>Dream. Create. Generate.</h1></div>",
     unsafe_allow_html=True
 )
 
