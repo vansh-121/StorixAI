@@ -19,7 +19,7 @@ chat = model.start_chat(history=[])
 # Function to generate a strongly genre-specific story
 def get_story_response(topic, story_type):
     prompt = (
-        f"Write a {story_type.lower()} story about {topic}. "
+        f"Write a {story_type.lower()} complete story about {topic}. "
         f"Use simple language with short sentences and basic words so everyone can understand it. "
         f"Don't use complicated words or ideas. Make sure it feels like a person wrote it, not a machine. "
         f"The story should match the style of the {story_type} genre. For example, horror should be suspenseful, and romance should be emotional. "
@@ -72,7 +72,7 @@ def text_to_speech(text):
     return temp_file_path
 
 # Initialize Streamlit app
-st.set_page_config(page_title="StoryAI - Dream Story Generator", page_icon="📚", layout="wide")
+st.set_page_config(page_title="StoryAI - Dream Story Generator", page_icon="✨", layout="wide")
 
 # Custom CSS for responsiveness across both light and dark modes
 st.markdown("""
