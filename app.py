@@ -213,5 +213,5 @@ if submit and topic_input:
 else:
     with st.container():
         st.markdown("<style> margin-bottom : 10px</style>", unsafe_allow_html=True)
-    st.warning("Please enter a topic to generate your story.", icon="⚠️")
+    st.warning("Made with ❤️ by Vansh Sethi.")
     
