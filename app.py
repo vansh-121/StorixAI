@@ -72,7 +72,7 @@ def text_to_speech(text):
     return temp_file_path
 
 # Initialize Streamlit app
-st.set_page_config(page_title="StoryAI - Dream Story Generator", page_icon="✨", layout="wide")
+st.set_page_config(page_title="StorixAI - Dream Story Generator", page_icon="✨", layout="wide")
 
 # Custom CSS for responsiveness across both light and dark modes
 st.markdown("""
