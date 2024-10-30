@@ -107,6 +107,7 @@ st.markdown("""
     .title-container {
         text-align: center;
         margin-bottom: 0px;
+        
     }
     .gradient-title {
         font-size: 48px;
@@ -146,7 +147,8 @@ st.markdown("""
     color: transparent;
     max-width: 600px;  /* This limits the width of the gradient */
     margin: 0 auto;  /* Center it within its container */
-}
+    margin-bottom : 20px;
+            }
 
     </style>
 """, unsafe_allow_html=True)
@@ -157,21 +159,29 @@ st.markdown(
 )
 
 # Add some spacing and a subtitle, adaptive to theme colors
-st.markdown("<p style='text-align: center; color: var(--text-color);'>Note: Kindly avoid using any inappropriate topics, as they will hinder the generation of the story.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center'; color: var(--text-color);'>Note: Kindly avoid using any inappropriate topics, as they will hinder the generation of the story.</p>", unsafe_allow_html=True)
 
+with st.container():
+    st.markdown("<h4 class = 'spaced-container' </h4>", unsafe_allow_html=True)
 # User input for topic, placed inside a container for better alignment
 with st.container():
     st.markdown("<h4 class='spaced-container' style='color: var(--text-color);'>Enter your story's topic :</h4>", unsafe_allow_html=True)
     topic_input = st.text_input("Topic", placeholder="e.g., A magical forest, A detective in the city...")
+
+with st.container():
+    st.markdown("<style> margin-bottom : 20px</style>", unsafe_allow_html=True)
 
 # Dropdown for story type selection
 st.markdown("<h4 class='spaced-container' style='color: var(--text-color);'>Choose your story's genre:</h4>", unsafe_allow_html=True)
 story_type = st.selectbox(
     "Story Genre", ["Fantasy", "Realistic", "Horror", "Comedy", "Adventure", "Mystery", "Sci-Fi"]
 )
-
+with st.container():
+    st.markdown(""" <style>
+                margin-bottom: 20px
+                </style>""", unsafe_allow_html=True)
 # Submit button to generate the story, styled with padding
-submit = st.button("Generate Story", help="Click to create your story!", use_container_width=True)
+submit = st.button("Generate Story", help="Click to create your story!", use_container_width=False)
 
 # Process user input and generate the story
 if submit and topic_input:
@@ -188,15 +198,17 @@ if submit and topic_input:
     )
     st.markdown(f"<div class='story-box'>{response}</div>", unsafe_allow_html=True)
 
+
+    st.markdown("<h4 style='color: var(--text-color);'>Listen to Your Story</h4>", unsafe_allow_html=True)
+    # Optional: Add a "Listen to Story" subheader
     # Convert the story to speech with a loader
     with st.spinner('Converting story to audio...'):
         audio_file_path = text_to_speech(response)
-    
     audio_file = open(audio_file_path, 'rb')
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format='audio/mp3')
-
-    # Optional: Add a "Listen to Story" subheader
-    st.markdown("<h4 style='color: var(--text-color);'>Listen to Your Story</h4>", unsafe_allow_html=True)
 else:
+    with st.container():
+        st.markdown("<style> margin-bottom : 10px</style>", unsafe_allow_html=True)
     st.warning("Please enter a topic to generate your story.", icon="⚠️")
+    
