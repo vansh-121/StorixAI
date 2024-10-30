@@ -58,7 +58,7 @@ def get_story_response(topic, story_type):
 # Function to convert text to speech and return the audio file path
 def text_to_speech(text):
     """Converts text to speech and returns the path to the audio file."""
-    st.info("Generating Audio...")
+    # st.info("Generating Audio...")
 
     clean_text = re.sub(r'[*_~`]', '', text)
     clean_text = re.sub(r'http\S+|www\S+|https\S+', '', clean_text, flags=re.MULTILINE)
@@ -198,8 +198,11 @@ if submit and topic_input:
     )
     st.markdown(f"<div class='story-box'>{response}</div>", unsafe_allow_html=True)
 
-
+    with st.container():
+        st.markdown("<style> margin-bottom : 20px</style>", unsafe_allow_html=True)
     st.markdown("<h4 style='color: var(--text-color);'>Listen to Your Story</h4>", unsafe_allow_html=True)
+    with st.container():
+        st.markdown("<style> margin-bottom : 20px</style>", unsafe_allow_html=True)
     # Optional: Add a "Listen to Story" subheader
     # Convert the story to speech with a loader
     with st.spinner('Converting story to audio...'):
