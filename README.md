@@ -1,5 +1,7 @@
 # StorixAI : Your Dream Story Generator
 
+Deployed Link :- https://storixai.streamlit.app/
+
 ✨ With 𝗦𝘁𝗼𝗿𝗶𝘅𝗔𝗜, you can generate stories in any genre you love, like 𝐅𝐚𝐧𝐭𝐚𝐬𝐲, 𝐇𝐨𝐫𝐫𝐨𝐫, 𝐂𝐨𝐦𝐞𝐝𝐲, 𝐀𝐝𝐯𝐞𝐧𝐭𝐮𝐫𝐞, 𝐑𝐞𝐚𝐥𝐢𝐬𝐭𝐢𝐜, 𝐒𝐜𝐢-𝐅𝐢, and more! 📚✨
 
 
