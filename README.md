@@ -1,27 +1,96 @@
-# StorixAI : Your Dream Story Generator
+# 📖 StorixAI: Your Personalized Story Generator
 
-Deployed Link :- https://storixai.streamlit.app/
+![GitHub repo size](https://img.shields.io/github/repo-size/vansh-121/StorixAI?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/vansh-121/StorixAI?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/vansh-121/StorixAI?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/vansh-121/StorixAI?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/vansh-121/StorixAI?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/vansh-121/StorixAI?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/vansh-121/StorixAI?style=flat-square)
 
-✨ With 𝗦𝘁𝗼𝗿𝗶𝘅𝗔𝗜, you can generate stories in any genre you love, like 𝐅𝐚𝐧𝐭𝐚𝐬𝐲, 𝐇𝐨𝐫𝐫𝐨𝐫, 𝐂𝐨𝐦𝐞𝐝𝐲, 𝐀𝐝𝐯𝐞𝐧𝐭𝐮𝐫𝐞, 𝐑𝐞𝐚𝐥𝐢𝐬𝐭𝐢𝐜, 𝐒𝐜𝐢-𝐅𝐢, and more! 📚✨
+![Platform](https://img.shields.io/badge/platform-Streamlit-red?style=flat-square)
+![Python](https://img.shields.io/badge/python-3.10-blue?style=flat-square&logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-0.0.350-brightgreen?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)
+
+---
+
+## 🌐 Live Demo
+
+Experience the magic of personalized storytelling:
+
+👉 [StorixAI Web App](https://storixai.streamlit.app/)
+
+---
+
+## 📖 Overview
+
+**StorixAI** is an AI-powered storytelling platform that crafts personalized narratives based on user inputs. Whether you're in the mood for adventure, romance, sci-fi, or mystery, StorixAI brings your imagination to life. Designed with accessibility in mind, it also offers voice narration, ensuring an inclusive experience for all users.
+
+---
+
+## ✨ Features
+
+- 🧠 **AI-Generated Stories**: Leveraging advanced language models to create unique narratives.
+- 🎭 **Multiple Genres**: Choose from a variety of genres like fantasy, horror, sci-fi, romance, and more.
+- 🎤 **Voice Narration**: Listen to your stories with integrated text-to-speech functionality.
+- 🎨 **User Customization**: Input specific themes, characters, or settings to tailor your story.
+- ♿ **Accessibility**: Designed to be user-friendly for visually impaired individuals.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Backend**: Python 3.10
+- **AI Integration**: [LangChain](https://www.langchain.com/)
+- **Deployment**: Streamlit Cloud
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.10 or higher
+- [pip](https://pip.pypa.io/en/stable/installation/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/vansh-121/StorixAI.git
+   cd StorixAI
+   ```
+2. **Create a virtual environment:**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+4. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Run the application:**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+### 📁 Project Structure
+
+```bash
+StorixAI/
+├── .devcontainer/       # Development container configuration
+├── __pycache__/         # Python cache files
+├── .env                 # Environment variables (not included in version control)
+├── .gitignore           # Git ignore file
+├── README.md            # Project documentation
+├── app.py               # Main Streamlit application
+├── requirements.txt     # Python dependencies
+```
 
 
-🔊𝗟𝗶𝘀𝘁𝗲𝗻 𝘁𝗼 𝘆𝗼𝘂𝗿 𝘀𝘁𝗼𝗿𝗶𝗲𝘀, 𝘁𝗼𝗼! StorixAI makes it easy for everyone, including visually impaired users, to enjoy their stories on the go! 🎧
-
-_____________________________________
-
-𝗛𝗼𝘄 𝗶𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗳𝘂𝗹 𝘁𝗼 𝘆𝗼𝘂? 🤔 
-
-1) Perfect if you love reading 𝐟𝐚𝐧𝐭𝐚𝐬𝐲 𝐬𝐭𝐨𝐫𝐢𝐞𝐬 and want one made just for you! 🧚‍♀️✨
-
-2) A unique alternative to 𝐂𝐡𝐚𝐭𝐆𝐏𝐓 – for personalized stories with even better results! 🤖📖
-
-3) Enjoy meaningful stories with 𝐝𝐢𝐚𝐥𝐨𝐠𝐮𝐞𝐬, 𝐦𝐨𝐫𝐚𝐥𝐬, and 𝐞𝐦𝐨𝐭𝐢𝐨𝐧𝐬 that truly resonate. 💬❤️
-
-4) 𝗦𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗱𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗳𝗼𝗿 𝘀𝘁𝗼𝗿𝗶𝗲𝘀 𝗼𝗻𝗹𝘆. (Extra features coming soon)
-
-_______________________________________
-
-
-⚠️𝗡𝗼𝘁𝗲: Stories on sensitive topics aren’t allowed. If you encounter an issue, simply switch genres or topics to keep the magic flowing! ⚠️
-
-Skills: Large Language Models (LLM) · LangChain · Streamlit · AI Pipeline
