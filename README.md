@@ -21,6 +21,8 @@ Experience the magic of personalized storytelling:
 
 👉 [StorixAI Web App](https://storixai.streamlit.app/)
 
+*(Press **Yes, get this app backup!** & wait for a few seconds — due to free tier CPU limitations)*
+
 ---
 
 ## 📖 Overview
@@ -93,4 +95,7 @@ StorixAI/
 ├── requirements.txt     # Python dependencies
 ```
 
+---
+
+#### Made with ❤️ by Vansh
 
