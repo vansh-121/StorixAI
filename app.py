@@ -13,7 +13,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Load the Gemini Pro model
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-2.5-pro")
 chat = model.start_chat(history=[])
 
 # Function to generate a strongly genre-specific story
@@ -215,3 +215,4 @@ else:
         st.markdown("<style> margin-bottom : 10px</style>", unsafe_allow_html=True)
     st.warning("Made with ❤️ by Vansh Sethi.")
     
+
